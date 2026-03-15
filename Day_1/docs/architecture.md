@@ -55,9 +55,7 @@ Data Collection → Data Cleaning → Feature Engineering → Model Training →
 ### Content-Based Filtering
 Uses car attributes such as:
 - category
-- brand
 - price
-- description
 
 ### Collaborative Filtering
 Uses user behavior data such as:

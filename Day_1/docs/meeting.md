@@ -38,8 +38,7 @@ To build the recommendation system, the following information was requested:
    - category
    - brand
    - pricePerDay
-   - userId
-   - booking history
+
 
 3. Data access method:
    - API endpoints
