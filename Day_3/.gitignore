@@ -1,50 +1,17 @@
-# Python
-__pycache__/
-*.pyc
-*.pyo
-*.pyd
-.Python
-env/
-venv/
-.venv/
-pip-log.txt
-pip-delete-this-directory.txt
-.tox/
-.coverage
-.coverage.*
-.cache
-nosetests.xml
-coverage.xml
-*.cover
-*.log
-.git
-.mypy_cache/
-.pytest_cache/
-.hypothesis/
-
 # Environment variables
 .env
-.env.local
-.env.production
 
-# IDE
-.vscode/
-.idea/
-*.swp
-*.swo
+# Python virtual environment
+venv/
+.env/
+ENV/
 
-# OS
+# Python cache
+__pycache__/
+*.pyc
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# OS files
 .DS_Store
-Thumbs.db
-
-# Temporary files
-*.tmp
-*.temp
-
-# Database (if local SQLite, but not needed for MongoDB)
-# *.db
-# *.sqlite3
-
-# Logs
-logs/
-*.log
