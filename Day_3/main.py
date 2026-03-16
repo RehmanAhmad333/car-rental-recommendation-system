@@ -5,6 +5,8 @@ from pymongo import MongoClient
 import os
 from dotenv import load_dotenv
 
+from .data import cars
+
 import pandas as pd
 
 app = FastAPI
@@ -31,19 +33,8 @@ except Exception as e:
 
 # insert data into database 
 
-# result = my_collection.insert_many(car_data)
-# print("Data inserted with ID:", result.inserted_ids)
-
-# Read all data from database
-# all_documents_list = list(my_collection.find({}))
-# # print("\nAll data as a list:")
-# # print(all_documents_list)
-
-# dict = {}
-
-# print("All documents as a list of dictionaries:")
-# for doc in all_documents_list:
-#     print(doc)
+result = my_collection.insert_many(cars)
+print("Data inserted with ID:", result.inserted_ids)
 
 
 # Retrieve all documents as a list of dictionaries
