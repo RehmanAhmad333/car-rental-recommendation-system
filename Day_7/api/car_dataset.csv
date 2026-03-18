@@ -1,0 +1,51 @@
+car_id,name,brand,category,pricePerDay
+1,Toyota Fortuner,Toyota,SUV,85
+2,Honda CR-V,Honda,SUV,75
+3,Ford Explorer,Ford,SUV,90
+4,Hyundai Tucson,Hyundai,SUV,70
+5,Kia Sportage,Kia,SUV,68
+6,Nissan Patrol,Nissan,SUV,110
+7,Mitsubishi Pajero,Mitsubishi,SUV,95
+8,Land Rover Defender,Land Rover,SUV,150
+9,Jeep Wrangler,Jeep,SUV,105
+10,BMW X5,BMW,SUV,180
+11,Tesla Model 3,Tesla,Electric,120
+12,Tesla Model Y,Tesla,Electric,140
+13,Tesla Model S,Tesla,Electric,200
+14,Nissan Leaf,Nissan,Electric,75
+15,BMW i4,BMW,Electric,165
+16,Audi e-tron,Audi,Electric,175
+17,Hyundai Ioniq 5,Hyundai,Electric,110
+18,Kia EV6,Kia,Electric,105
+19,Porsche Taycan,Porsche,Electric,280
+20,Mercedes EQS,Mercedes,Electric,260
+21,Lamborghini Urus,Lamborghini,Luxury,500
+22,Rolls Royce Ghost,Rolls Royce,Luxury,900
+23,Bentley Continental,Bentley,Luxury,750
+24,Mercedes S-Class,Mercedes,Luxury,350
+25,BMW 7 Series,BMW,Luxury,320
+26,Audi A8,Audi,Luxury,300
+27,Porsche Panamera,Porsche,Luxury,400
+28,Maserati Ghibli,Maserati,Luxury,380
+29,Ferrari Roma,Ferrari,Luxury,1200
+30,Lamborghini Huracan,Lamborghini,Luxury,1100
+31,Mazda MX-5 Miata,Mazda,2-Seater,95
+32,Porsche 911,Porsche,2-Seater,550
+33,BMW Z4,BMW,2-Seater,220
+34,Mercedes SLC,Mercedes,2-Seater,210
+35,Audi TT,Audi,2-Seater,190
+36,Honda S2000,Honda,2-Seater,130
+37,Toyota GR86,Toyota,2-Seater,115
+38,Subaru BRZ,Subaru,2-Seater,110
+39,Ford Mustang,Ford,2-Seater,175
+40,Chevrolet Corvette,Chevrolet,2-Seater,450
+41,Toyota RAV4,Toyota,SUV,72
+42,Honda Pilot,Honda,SUV,88
+43,Chevrolet Tahoe,Chevrolet,SUV,120
+44,Rivian R1T,Rivian,Electric,195
+45,Volkswagen ID.4,Volkswagen,Electric,98
+46,Rolls Royce Cullinan,Rolls Royce,Luxury,1000
+47,Aston Martin DB11,Aston Martin,Luxury,850
+48,Lotus Elise,Lotus,2-Seater,160
+49,Alpine A110,Alpine,2-Seater,145
+50,Dodge Viper,Dodge,2-Seater,380
