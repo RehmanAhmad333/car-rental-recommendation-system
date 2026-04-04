@@ -1,10 +1,6 @@
-from fastapi import FastAPI , HTTPException , Query    # type: ignore
-from fastapi.middleware.cors import CORSMiddleware    # type: ignore
-from .model import recommend   # type: ignore
-from pathlib import Path
-
-from pydantic import BaseModel
-from typing import List
+from fastapi import FastAPI, HTTPException, Query
+from fastapi.middleware.cors import CORSMiddleware
+from model import recommend, category_names   
 
 app = FastAPI(
     title="AI car recommendation API",
@@ -21,29 +17,24 @@ app.add_middleware(
 
 @app.get("/")
 def read_root():
-    try:
-        return {"message": "Welcome to the AI car recommendation system.Server is up and running!"}
-    except Exception as e:
-        raise HTTPException(status_code=500, detail=str(e))
-    
+    return {
+        "message": "Welcome to AI Car Recommendation System!",
+        "available_categories": category_names   
+    }
+
 @app.get("/recommendation")
 def get_recommendation(
-    category: str = Query(...,description="The category of the car (e.g., SUV, sedan, etc.)"), 
-    max_price: float = Query(...,description="The maximum price per day for the car rental."), 
-    top_car: int = Query(5,description="The number of top recommended cars to return.")
+    category: str = Query(..., description="Car category"),
+    max_price: float = Query(..., description="Maximum price per day"),
+    top_car: int = Query(5, description="Number of recommendations")
 ):
     try:
-        # check valid category
-        valid_categories = ["SUV", "Electric", 
-                        "Luxury", "2-Seater"]
-    
-        if category not in valid_categories:
+        if category not in category_names:
             raise HTTPException(
                 status_code=400,
-                detail=f"Invalid category! Choose from: {valid_categories}"
+                detail=f"Invalid category! Choose from: {category_names}"
             )
-        
-        # Validate price
+
         if max_price <= 0:
             raise HTTPException(
                 status_code=400,
@@ -52,7 +43,8 @@ def get_recommendation(
 
         result = recommend(category, max_price, top_car)
         return result
+
+    except HTTPException:
+        raise
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
-
-
